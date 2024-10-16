@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shuangta AR+AI Tour System 2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script type='text/javascript' src='components/aframe-ar-nft.js'></script>
+    <script src='index.js'></script>
+</head>
+
+<body style='margin: 0; overflow: hidden;'>
+
+    <img class="mapButton" src="resourses/mapButton.png" width="50px">
+
+    <div class="topDisplayArea">
+        <div style="font-weight: bold;">『 主线任务 』</div>
+        <div>联系NPC获取下一个任务</div>
+    </div>
+
+    <div class="dock">
+
+        <div class="dockElement">
+            <img src="resourses/camera.png" width="30px">
+            <div>AR探索</div>
+        </div>
+
+        <div id="chatButton" class="dockElement">
+            <img src="resourses/chat.png" width="30px">
+            <div>交谈</div>
+        </div>
+
+        <div id="storyButton" class="dockElement">
+            <img src="resourses/route.png" width="30px">
+            <div>故事线</div>
+        </div>
+
+        <div id="meButton" class="dockElement">
+            <img src="resourses/user.png" width="30px">
+            <div>我的</div>
+        </div>
+
+    </div>
+
+    <div class="notification">
+        <img src="/resourses/done.png" width="40px">
+        <text>任务完成: 探索正殿</text>
+    </div>
+
+    <div id="meWindow" class="window" style="visibility: hidden;">
+        <div style="font-weight: bold;">关于双塔 AR+AI 导览</div>
+        <div id="meWindowCloseButton" class="closeButton">关闭</div>
+    </div>
+
+    <div id="chatWindow" class="window" style="visibility: hidden;">
+        <div style="font-weight: bold;">选择想要交谈的NPC</div>
+        <div id="chatWindowCloseButton" class="closeButton">关闭</div>
+    </div>
+
+    <div id="storyWindow" class="window" style="visibility: hidden;">
+        <div style="font-weight: bold;">故事线</div>
+        <div id="storyWindowCloseButton" class="closeButton">关闭</div>
+    </div>
+
+
+    <a-scene vr-mode-ui="enabled: false" arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
+        loading-screen="dotsColor: black; backgroundColor: white"
+        device-orientation-permission-ui="denyButtonText: 拒绝 Deny; allowButtonText: 同意 Allow; deviceMotionMessage:请授予动作与方向的访问权限<br><br>Please grant access to motion and orientation">
+
+        <a-assets>
+
+        </a-assets>
+    </a-scene>
+</body>

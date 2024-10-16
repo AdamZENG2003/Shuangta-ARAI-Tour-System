@@ -1,0 +1,115 @@
+.dock{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dockElement{
+    font-family: Arial;
+    bottom: 0px;
+    width: 20%;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.topDisplayArea{
+    font-family: Arial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #242424;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.notification{
+    font-family: Arial;
+    position: fixed;
+    top: 65px;
+    left: 10px;
+    right: 10px;
+    height: 60px;
+    background-color: #f2f2f2;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.window{
+    font-family: Arial;
+    position: fixed;
+    top: 65px;
+    left: 10px;
+    right: 10px;
+    bottom: 70px;
+    background-color: #f2f2f2;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.closeButton{
+    font-family: Arial;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 80px;
+    height: 50px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.mapButton{
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+    z-index: 1000;
+}
